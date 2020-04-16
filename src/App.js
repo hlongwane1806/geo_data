@@ -15,7 +15,7 @@ class App extends Component {
       lon:0,
       results:'',
       distances : [], 
-      perPage:15,
+      perPage:10,
       currentPage:1, 
       currentPageResults:[],
       totalResults:data.length

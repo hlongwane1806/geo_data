@@ -18,7 +18,7 @@ function Pagination({changePage, currentPage, totalResults,perPage}) {
                     </li>
                     {pageNumbers.map((num)=>{
                         return(<li key={num} className={currentPage === num ? "page-item active": "page-item"}>
-                            <a href="!#" className="page-link" onClick={()=>changePage(num)}>{num}</a>
+                            <a  className="page-link" onClick={()=>changePage(num)}>{num}</a>
                         </li>)
                     })}
                     
