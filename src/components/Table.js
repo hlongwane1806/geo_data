@@ -4,7 +4,7 @@ import React from 'react';
 
 const Table = ({data, perPage, currentPage}) =>{
     const firstIndex = (currentPage-1)*perPage;
-    return(<table className="table table-dark">
+    return(<table className="table table-dark table-responsive-sm">
     <thead>
       <tr >
         <th scope="col">#</th>

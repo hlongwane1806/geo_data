@@ -4,9 +4,9 @@ function function1(props) {
     const {lat, lon, handleSubmit, onChange, results } = props;
     return (
         
-<form onSubmit ={handleSubmit} className ="mt-4 mb-4 center-form">
+<form onSubmit ={handleSubmit} className ="mt-20 mb-4 center-form">
   <div className="form-row align-items-center">
-    <div className="col-auto">
+    <div className="col-auto ">
         <div className="input-group mb-2">
             <div className="input-group-prepend">
             <div className="input-group-text">lat</div>

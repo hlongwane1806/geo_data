@@ -12,12 +12,12 @@ function Pagination({changePage, currentPage, totalResults,perPage}) {
     return (
         
             <nav aria-label="Page navigation example">
-                <ul className="pagination justify-content-center">
+                <ul className="pagination  justify-content-center">
                     <li className={currentPage===1?"page-item disabled":"page-item"}>
-                    <a className="page-link"  aria-disabled={currentPage===1} onClick={()=>changePage(currentPage+1)}>Previous</a>
+                    <a className="page-link"  aria-disabled={currentPage===1} onClick={()=>changePage(currentPage-1)}>Previous</a>
                     </li>
                     {pageNumbers.map((num)=>{
-                        return(<li key={num} className={currentPage === num ? "page-item active": "page-item"}>
+                        return(<li key={num} className={currentPage === num ? "page-item active page-num": "page-num page-item"}>
                             <a  className="page-link" onClick={()=>changePage(num)}>{num}</a>
                         </li>)
                     })}
